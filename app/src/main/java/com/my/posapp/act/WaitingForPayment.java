@@ -19,6 +19,7 @@ public class WaitingForPayment extends AppCompatActivity {
 
     ActivityWaitingForPaymentBinding binding;
     private ArrayList<PaymentModel> modelList = new ArrayList<>();
+
     WaitingForPaymentAdapter mAdapter;
 
     @Override
