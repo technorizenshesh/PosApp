@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RRToolbar"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:src="@drawable/locat"
+                        android:layout_centerInParent="true"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:text="Default Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:src="@drawable/notification"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@+id/RRToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+               <!-- part one-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"
+                    >
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dash"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginLeft="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arrow_left"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        >
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arrow_right"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        >
+
+                    </ImageView>
+
+
+                </RelativeLayout>
+
+                <!-- part Two-->
+                <RelativeLayout
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/bg_white"
+                    android:elevation="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_relt"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="@string/revenue_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/yellow_new"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="@string/more_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_below="@+id/txt_relt"
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:paddingLeft="@dimen/_8sdp"
+                                android:textColor="@color/black_new"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="New Orders"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textColor="@color/black_new"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Cancelling Orders"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textColor="@color/black_new"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Returned Order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_12sdp"
+                                android:text="0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+                <!-- part Three-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_below="@+id/txt_relt"
+                        android:weightSum="4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/create"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                >
+
+                            </ImageView>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Create\nOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/create_pos"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                >
+
+                            </ImageView>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Create Pos\nOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/lookup"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                >
+
+                            </ImageView>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Lookup\nShpping Free"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/add_product"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Add\nProduct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/txt_relt"
+                        android:weightSum="4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/create_purches"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Create\nOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/receipt_payment"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                >
+
+                            </ImageView>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Create Pos\nOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/face"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Lookup\nShpping Free"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_more"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/more"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                >
+
+                            </ImageView>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="More"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dash"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="PENDING ORDERS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <RelativeLayout
+                    android:id="@+id/WaitingApporval"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:src="@drawable/waiting"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Waiting for Approval"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:src="@drawable/arw_right"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/WaitingPayment"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:src="@drawable/waiting"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Waiting for Payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:src="@drawable/arw_right"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/WaitingPocked"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:src="@drawable/waiting"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Waiting to be Pocked"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:src="@drawable/arw_right"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/WaitingShipped"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:src="@drawable/waiting"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Waiting to be Shipped"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:src="@drawable/arw_right"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/WaitingTransit"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:src="@drawable/waiting"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="in Transit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:src="@drawable/arw_right"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/WaitingINComming"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:src="@drawable/waiting"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="in comming cancelled order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_new"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:src="@drawable/arw_right"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+    </RelativeLayout>
+
+</layout>

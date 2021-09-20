@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.my.posapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.PosApp">
+
+        <activity android:name=".act.WaitingPaymentDetails">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".act.WaitingPayLeter"
+            ></activity>
+
+        <activity android:name=".act.WaitingForPocked" />
+        <activity android:name=".act.WaitingForPayment"></activity>
+        <activity android:name=".act.FilterrActivity" />
+        <activity android:name=".act.WatingApproval" />
+        <activity android:name=".act.ProductDetails" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".act.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.VerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".act.ChooseLoginActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".act.HomeActivity">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:singleLine="true"
+            android:text="Select Payment Method"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <!-- part Three-->
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Forward order to shipping partner"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:background="@color/gray_new"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Call Shipper"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:background="@color/gray_new"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Pick up at store"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:background="@color/gray_new"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</layout>
