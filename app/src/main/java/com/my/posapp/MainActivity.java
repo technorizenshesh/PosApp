@@ -19,15 +19,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void finds() {
-        new Handler().postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable()
+        {
             @Override
             public void run() {
-
                 Intent i = new Intent(MainActivity.this, ChooseLoginActivity.class);
                 startActivity(i);
                 finish();
-
             }
         }, 3000);
     }
+
 }

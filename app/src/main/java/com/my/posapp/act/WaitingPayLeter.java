@@ -1,5 +1,6 @@
 package com.my.posapp.act;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,15 +24,14 @@ public class WaitingPayLeter extends AppCompatActivity {
 
 
         binding.imgPayDeliver.setOnClickListener(v -> {
-            BottomShippingMethodFragment bottomSheetFragment= new BottomShippingMethodFragment(WaitingPayLeter.this);
-            bottomSheetFragment.show(getSupportFragmentManager(),"ModalBottomSheet");
 
+            startActivity(new Intent(WaitingPayLeter.this,MoreDetailsSales.class));
 
         });
 
         binding.imgMore.setOnClickListener(v -> {
 
-            BottomMoreOptionFragment bottomSheetFragment= new BottomMoreOptionFragment(WaitingPayLeter.this);
+            BottomShippingMethodFragment bottomSheetFragment= new BottomShippingMethodFragment(WaitingPayLeter.this);
             bottomSheetFragment.show(getSupportFragmentManager(),"ModalBottomSheet");
 
         });

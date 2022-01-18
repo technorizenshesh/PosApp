@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RRToolbar"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/RRback"
+                android:visibility="visible"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:src="@drawable/cross"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:text="@string/update_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@+id/RRToolbar"
+            android:layout_above="@+id/ll_singUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update the pickup and receiving address to find a suitable sghipping service."
+                    android:textColor="#B8B8B8"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipient"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp" />
+
+
+
+                <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recipient_name"
+                android:textColor="#B8B8B8"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:elevation="@dimen/_3sdp"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/edt_border"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:hint="Khach Le"
+                android:inputType="textEmailAddress"
+                android:textColor="#232333" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/txtgray"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:elevation="@dimen/_3sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/edt_border"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:hint="84- 9770531114"
+                    android:inputType="number"
+                    android:textColor="@color/edtgray" />
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_pickup_address_detailed_address"
+                    android:textColor="@color/txtgray"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:elevation="@dimen/_3sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/edt_border"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:hint="109 C Vijay Nagar, Vetnam"
+                    android:inputType="number"
+                    android:textColor="@color/edtgray" />
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area"
+                    android:textColor="@color/txtgray"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/RRArea"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/edt_border"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Near Sai Temple"
+                        android:textColor="@color/txtgray"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:src="@drawable/arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+                    </ImageView>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subdistrict"
+                    android:textColor="@color/txtgray"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/RRsubdistrict"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/edt_border"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Near Sai Temple"
+                        android:textColor="@color/txtgray"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:src="@drawable/arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp">
+
+                    </ImageView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:id="@+id/RRConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@drawable/btn_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/confirm"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>

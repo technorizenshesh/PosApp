@@ -17,6 +17,7 @@
             >
 
             <RelativeLayout
+                android:id="@+id/RR_back"
                 android:visibility="visible"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="match_parent"
@@ -127,6 +128,7 @@
                     </TextView>
 
                     <RelativeLayout
+                        android:id="@+id/RRfilter"
                         android:layout_alignParentRight="true"
                         android:visibility="visible"
                         android:layout_width="@dimen/_40sdp"

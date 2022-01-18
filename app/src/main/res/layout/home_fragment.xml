@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
     <RelativeLayout
         android:background="@color/white"
@@ -49,10 +50,7 @@
 
                 </TextView>
 
-
-
             </LinearLayout>
-
 
             <RelativeLayout
                 android:layout_alignParentRight="true"
@@ -83,8 +81,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
-
-
 
                <!-- part one-->
                 <RelativeLayout
@@ -122,9 +118,7 @@
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
                         >
-
                     </ImageView>
-
 
                 </RelativeLayout>
 
@@ -290,6 +284,7 @@
                         >
 
                         <LinearLayout
+                            android:id="@+id/LLCreateOrder"
                             android:orientation="vertical"
                             android:layout_weight="1"
                             android:layout_width="match_parent"
@@ -322,6 +317,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/LlCreateOrderPos"
                             android:orientation="vertical"
                             android:layout_weight="1"
                             android:layout_width="match_parent"
@@ -354,6 +350,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/llShippingFree"
                             android:orientation="vertical"
                             android:layout_weight="1"
                             android:layout_width="match_parent"
@@ -386,6 +383,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/llAddProduct"
                             android:orientation="vertical"
                             android:layout_weight="1"
                             android:layout_width="match_parent"
@@ -428,6 +426,7 @@
                         >
 
                         <LinearLayout
+                            android:id="@+id/LLCreatePurchesOrder"
                             android:orientation="vertical"
                             android:layout_weight="1"
                             android:layout_width="match_parent"
@@ -449,7 +448,7 @@
                                 android:layout_gravity="center"
                                 android:textColor="@color/blue"
                                 android:textSize="@dimen/_10sdp"
-                                android:text="Create\nOrder"
+                                android:text="Create\PurchesOrder"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
@@ -459,6 +458,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/LLCreatePayment"
                             android:orientation="vertical"
                             android:layout_weight="1"
                             android:layout_width="match_parent"
@@ -481,7 +481,7 @@
                                 android:layout_gravity="center"
                                 android:textColor="@color/blue"
                                 android:textSize="@dimen/_10sdp"
-                                android:text="Create Pos\nOrder"
+                                android:text="Create Payment\nreceipt Payment"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
@@ -491,6 +491,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/llFaceBook"
                             android:orientation="vertical"
                             android:layout_weight="1"
                             android:layout_width="match_parent"
@@ -512,7 +513,7 @@
                                 android:layout_gravity="center"
                                 android:textColor="@color/blue"
                                 android:textSize="@dimen/_10sdp"
-                                android:text="Lookup\nShpping Free"
+                                android:text="Facebook\nConversation"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
@@ -520,6 +521,7 @@
 
 
                         </LinearLayout>
+
 
                         <LinearLayout
                             android:id="@+id/ll_more"

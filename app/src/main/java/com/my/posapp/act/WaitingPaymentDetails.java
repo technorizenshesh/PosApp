@@ -20,11 +20,13 @@ public class WaitingPaymentDetails extends AppCompatActivity {
         binding= DataBindingUtil.setContentView(this,R.layout.activity_waiting_payment_details);
 
 
+        binding.RRback.setOnClickListener(v -> {
+            onBackPressed();
+        });
+
         binding.imgPayment.setOnClickListener(v -> {
             BottomPaymentOptionFragment bottomSheetFragment= new BottomPaymentOptionFragment(WaitingPaymentDetails.this);
             bottomSheetFragment.show(getSupportFragmentManager(),"ModalBottomSheet");
-
-
         });
 
         binding.imgMore.setOnClickListener(v -> {

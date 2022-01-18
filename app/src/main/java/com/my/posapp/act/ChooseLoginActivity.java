@@ -22,15 +22,16 @@ public class ChooseLoginActivity extends AppCompatActivity {
         binding.imgManagger.setOnClickListener(view -> {
 
             Intent i = new Intent(ChooseLoginActivity.this, LoginActivity.class);
+            i.putExtra("Type","OshopManager");
             startActivity(i);
-            finish();
 
         });
+
         binding.imgShops.setOnClickListener(view -> {
 
             Intent i = new Intent(ChooseLoginActivity.this, LoginActivity.class);
+            i.putExtra("Type","Oshop");
             startActivity(i);
-            finish();
 
         });
     }

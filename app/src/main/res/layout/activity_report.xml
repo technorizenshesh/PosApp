@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RRToolbar"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/RRBack"
+                android:visibility="visible"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:src="@drawable/back"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:text="Reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            >
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txtSales"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp"
+                android:text="SALES"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txtInventory"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/natural_gray"
+                android:textSize="@dimen/_14sdp"
+                android:text="INVENTORY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txtFinancy"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/natural_gray"
+                android:textSize="@dimen/_14sdp"
+                android:text="FINANCE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            >
+
+            <View
+                android:id="@+id/viewSales"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </View>
+
+
+            <View
+                android:id="@+id/viewINVENTORY"
+                android:layout_weight="1"
+                android:background="@color/natural_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </View>
+
+
+            <View
+                android:id="@+id/viewFINANCE"
+                android:layout_weight="1"
+                android:background="@color/natural_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </View>
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_above="@+id/RR_btm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_ReportContainer"
+            />
+
+
+
+    </LinearLayout>
+
+</layout>

@@ -8,6 +8,19 @@
         android:layout_height="match_parent"
         >
 
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            android:background="@drawable/progresh_background"
+            android:elevation="6dp"
+            android:padding="5dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/purple_200"
+            android:visibility="gone"
+            />
 
         <androidx.core.widget.NestedScrollView
             android:layout_above="@+id/ll_singUp"
@@ -67,6 +80,7 @@
                     android:textSize="@dimen/_12sdp" />
 
                 <EditText
+                    android:id="@+id/edtEmail"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:elevation="@dimen/_3sdp"
@@ -76,7 +90,7 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_45sdp"
-                    android:text="example@gmail.com"
+                    android:hint="example@gmail.com"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/black_new" />
 
@@ -91,6 +105,7 @@
                     android:textSize="@dimen/_12sdp" />
 
                 <EditText
+                    android:id="@+id/edtPassword"
                     android:layout_marginRight="@dimen/_5sdp"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:elevation="@dimen/_3sdp"
@@ -100,10 +115,9 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_45sdp"
-                    android:text="example@gmail.com"
+                    android:hint="example@gmail.com"
                     android:inputType="textPassword"
                     android:textColor="@color/black_new" />
-
 
                 <TextView
                     android:layout_marginLeft="@dimen/_5sdp"
@@ -157,7 +171,18 @@
                     android:layout_height="wrap_content"
                     >
 
+                    <com.facebook.login.widget.LoginButton
+                        android:visibility="gone"
+                        android:id="@+id/connectWithFbButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="  connect_with_facebook" />
+
+
                     <ImageView
+                        android:id="@+id/imgFacebook"
                         android:layout_centerInParent="true"
                         android:layout_width="@dimen/_60sdp"
                         android:layout_height="@dimen/_60sdp"
@@ -165,6 +190,7 @@
                         android:src="@mipmap/fb"/>
 
                     <ImageView
+                        android:layout_marginLeft="@dimen/_20sdp"
                         android:id="@+id/imgGoogle"
                         android:layout_centerInParent="true"
                         android:layout_width="@dimen/_60sdp"
@@ -175,6 +201,7 @@
 
 
                     <ImageView
+                        android:visibility="gone"
                         android:id="@+id/img_tutor"
                         android:layout_centerInParent="true"
                         android:layout_width="@dimen/_60sdp"

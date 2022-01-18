@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    tools:ignore="MissingDefaultResource"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        >
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/computer"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/txtConnect"
+            android:orientation="vertical"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/txtProductName"
+                android:textStyle="bold"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:text="Product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtSku"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/natural_gray"
+                android:textSize="@dimen/_14sdp"
+                android:text="Sku : new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:textStyle="bold"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:text="900"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtUnitCost"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/natural_gray"
+                android:textSize="@dimen/_16sdp"
+                android:text="9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

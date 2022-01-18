@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@+id/RRToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Partners connected through SAPO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="SAPO EXPRESS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Activated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/natural_gray"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp">
+
+                </View>
+
+                <TextView
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Shipping Partners (8)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    >
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="SNAPPY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="NINJA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="GHN"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="BESTEXPRRESS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="DNT EXPRESS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Self Contracted Partners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:src="@drawable/computer"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_toLeftOf="@+id/txtConnect"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toRightOf="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="MI Tom Omni Vi Tom Chanh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/natural_gray"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="AHAMOVE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtConnect"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Connect Now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:src="@drawable/computer"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_toLeftOf="@+id/txtConnect1"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="MI Tom Omni Vi Tom Chanh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/natural_gray"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="AHAMOVE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtConnect1"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Connect Now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:src="@drawable/computer"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_toLeftOf="@+id/txtConnect2"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toRightOf="@+id/img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="MI Tom Omni Vi Tom Chanh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/natural_gray"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="AHAMOVE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtConnect2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Connect Now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:src="@drawable/computer"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_toLeftOf="@+id/txtConnect3"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toRightOf="@+id/img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="MI Tom Omni Vi Tom Chanh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/natural_gray"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="AHAMOVE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtConnect3"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Connect Now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>

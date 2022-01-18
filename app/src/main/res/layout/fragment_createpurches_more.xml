@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".act.HomeActivity">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Change Order method."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <!-- part Three-->
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txtForword"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentLeft="true"
+                android:text="Place Order"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:background="@color/gray_new"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <TextView
+                android:id="@+id/txtcallshipper"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentLeft="true"
+                android:text="Place Order and confirm"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <View
+                android:background="@color/gray_new"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <TextView
+                android:id="@+id/txtpick_up_at_store"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentLeft="true"
+                android:text="Place Order and receive stock"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:background="@color/gray_new"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</layout>

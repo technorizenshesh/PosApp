@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/choose_pick_up_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_16sdp"
+            android:text="Ha- Noi- Quan Ba Dinh- Phurong Vinh Phuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/RRShare"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/btn_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

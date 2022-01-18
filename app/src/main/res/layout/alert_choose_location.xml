@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/choose_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+
+
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="All Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+
+               <ImageView
+                   android:src="@drawable/blue_circle"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="@dimen/_20sdp"
+                   android:layout_height="@dimen/_20sdp"
+                   >
+
+               </ImageView>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Default Location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <ImageView
+                    android:src="@drawable/blue_circle_new"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    >
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1sp">
+
+            </View>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/RRcancel"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="CANCEL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                <View
+                    android:background="@color/black"
+                    android:layout_width="1sp"
+                    android:layout_height="match_parent"
+                    >
+
+                </View>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/RRShare"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/btn_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Share Location"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

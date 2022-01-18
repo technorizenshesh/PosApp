@@ -21,11 +21,13 @@ public class WaitingForPocked extends AppCompatActivity {
     private ArrayList<PaymentModel> modelList = new ArrayList<>();
     WaitingForPaymentAdapter mAdapter;
     ActivityWaitingForPockedBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_waiting_for_pocked);
 
+        setAdapter();
     }
 
     private void setAdapter() {

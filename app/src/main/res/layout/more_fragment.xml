@@ -16,7 +16,6 @@
             android:layout_height="@dimen/_50sdp"
             >
 
-
             <TextView
                 android:gravity="center"
                 android:layout_centerInParent="true"
@@ -44,6 +43,7 @@
                 >
 
                 <RelativeLayout
+                    android:id="@+id/RREditProfile"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
@@ -59,14 +59,27 @@
                         android:layout_height="wrap_content"
                         >
 
-                        <ImageView
-                            android:src="@drawable/bg_yel"
-                            android:layout_width="@dimen/_70sdp"
-                            android:layout_height="@dimen/_70sdp">
 
-                        </ImageView>
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="@dimen/_360sdp"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imgUser"
+                                android:src="@drawable/bg_yel"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                >
+                            </ImageView>
+
+                        </androidx.cardview.widget.CardView>
+
+
 
                         <TextView
+                            android:id="@+id/nAme"
                             android:textStyle="bold"
                             android:layout_marginLeft="@dimen/_10sdp"
                             android:gravity="center"
@@ -106,6 +119,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/RRReport"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
@@ -170,6 +184,7 @@
                 </View>
 
                 <RelativeLayout
+                    android:id="@+id/RRCustomer"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
@@ -234,6 +249,7 @@
                 </View>
 
                 <RelativeLayout
+                    android:id="@+id/RRCash"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
@@ -547,9 +563,7 @@
 
                         </ImageView>
 
-
                     </LinearLayout>
-
 
                 </RelativeLayout>
 
@@ -557,7 +571,7 @@
                     android:layout_marginBottom="@dimen/_20sdp"
                     android:layout_marginLeft="@dimen/_20sdp"
                     android:layout_marginRight="@dimen/_20sdp"
-                    android:id="@+id/TxtSingUp"
+                    android:id="@+id/TxtLogout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/iv_Logo"

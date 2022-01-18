@@ -33,6 +33,7 @@
             >
 
             <LinearLayout
+                android:visibility="gone"
                 android:layout_below="@+id/txt_relt"
                 android:weightSum="4"
                 android:layout_width="match_parent"
@@ -172,12 +173,13 @@
             <LinearLayout
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_below="@+id/txt_relt"
-                android:weightSum="4"
+                android:weightSum="2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
 
                 <LinearLayout
+                    android:id="@+id/llZola"
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
@@ -209,6 +211,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/DeliveryManagement"
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
@@ -231,7 +234,7 @@
                         android:layout_gravity="center"
                         android:textColor="@color/blue"
                         android:textSize="@dimen/_10sdp"
-                        android:text="Facebook\nConversation"
+                        android:text="DELIVERY\nManagement"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
@@ -241,6 +244,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:visibility="gone"
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
@@ -250,7 +254,7 @@
                     <ImageView
                         android:layout_gravity="center"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/face"
+                        android:src="@drawable/create_pos"
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="@dimen/_50sdp"
                         >
@@ -272,6 +276,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:visibility="gone"
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="match_parent"

@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
             android:singleLine="true"
-            android:text="Select Payment Method"
+            android:text="Select shipping Method"
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />
 
@@ -34,13 +34,14 @@
             >
 
             <TextView
-                android:padding="@dimen/_5sdp"
+                android:id="@+id/txtForword"
+                android:gravity="center"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
                 android:layout_alignParentLeft="true"
-                android:text="Forward order to shipping partner"
-                android:textColor="@color/blue"
+                android:text="@string/forward_order_to_shipping_partner"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_14sdp" />
 
             <View
@@ -51,15 +52,18 @@
             </View>
 
             <TextView
-                android:padding="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/txtcallshipper"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
                 android:layout_alignParentLeft="true"
-                android:text="Call Shipper"
-                android:textColor="@color/blue"
+                android:text="@string/call_shipper"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_14sdp" />
+
 
             <View
                 android:background="@color/gray_new"
@@ -69,14 +73,16 @@
             </View>
 
             <TextView
-                android:padding="@dimen/_5sdp"
-                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/txtpick_up_at_store"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
                 android:layout_alignParentLeft="true"
-                android:text="Pick up at store"
-                android:textColor="@color/blue"
+                android:text="@string/pick_up_at_store"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_14sdp" />
 
             <View

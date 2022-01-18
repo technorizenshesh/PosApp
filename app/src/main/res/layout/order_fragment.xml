@@ -44,6 +44,7 @@
 
 
                 <RelativeLayout
+                    android:id="@+id/RRCreate"
                     android:padding="@dimen/_5sdp"
                     android:background="@drawable/bg_white"
                     android:elevation="@dimen/_10sdp"
@@ -95,6 +96,7 @@
                 </View>
 
                 <RelativeLayout
+                    android:id="@+id/RROrder"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_width="match_parent"
@@ -160,6 +162,7 @@
 
 
                 <RelativeLayout
+                    android:id="@+id/RRRefound"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
@@ -224,6 +227,7 @@
                 </View>
 
                 <RelativeLayout
+                    android:id="@+id/RRdrlibry"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
@@ -288,6 +292,7 @@
                 </View>
 
                 <RelativeLayout
+                    android:id="@+id/RRStore"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"
@@ -352,6 +357,7 @@
                 </View>
 
                 <RelativeLayout
+                    android:id="@+id/RRSave"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:layout_marginLeft="@dimen/_10sdp"

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    >
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_14sdp"
+        android:text="@string/choose_subdistrict_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <RelativeLayout
+        android:background="@drawable/search_one"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/img_search"
+            android:src="@drawable/serach_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_search"
+            android:textSize="@dimen/_16sdp"
+            android:text="@string/search_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RRArea"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:text="Ha Noi- Thi Xa Sorn Tay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/blue_circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:text="Ha Noi- Thi Xa Sorn Tay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/blue_circle">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:text="Ha Noi- Thi Xa Sorn Tay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/blue_circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:text="Ha Noi- Thi Xa Sorn Tay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/blue_circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:text="Ha Noi- Thi Xa Sorn Tay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/blue_circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:text="Ha Noi- Thi Xa Sorn Tay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/blue_circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:text="Ha Noi- Thi Xa Sorn Tay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/blue_circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/RRShare"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/btn_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Share Location"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

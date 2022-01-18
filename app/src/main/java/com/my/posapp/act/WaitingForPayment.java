@@ -27,6 +27,16 @@ public class WaitingForPayment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_waiting_for_payment);
 
+        binding.RRfilter.setOnClickListener(v -> {
+
+            startActivity(new Intent(WaitingForPayment.this, FilterrActivity.class));
+
+        });
+
+        binding.RRback.setOnClickListener(v -> {
+            onBackPressed();
+        });
+
         setAdapter();
     }
 
